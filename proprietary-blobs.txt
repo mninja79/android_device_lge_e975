@@ -119,7 +119,6 @@ bin/rild
 bin/mm-qcamera-daemon
 bin/mpdecision
 bin/qosmgr
-vendor/firmware/libpn544_fw.so
 vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/keymaster/keymaster.b03

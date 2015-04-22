@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2015 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -108,5 +108,17 @@ PRODUCT_COPY_FILES += \
 #	FM2 \
 #	qcom.fmradio \
 #	libqcomfm_jni
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nj.display.version=0.1 \
+	ro.cm.based.variant=GPROJ \
+	ro.media.enc.jpeg.quality=100 \
+	ro.media.dec.jpeg.memcap=8000000 \
+	ro.media.enc.hprof.vid.bps=8000000
+
+ADDITIONAL_DEFAULT_PROPERTIES := \
+	ro.adb.secure=0 \
+	ro.secure=0 \
+	persist.service.adb.enable=1
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
