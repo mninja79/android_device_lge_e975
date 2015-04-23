@@ -84,6 +84,7 @@ PRODUCT_PACKAGES += \
 	libmmcamera_interface
 
 PRODUCT_PACKAGES += \
+	bdAddrLoader \
 	libwfcu \
 	conn_init
 
