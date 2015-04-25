@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 #	libqcomfm_jni
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nj.display.version=0.1 \
+	ro.nproj.display.version=0.1 \
 	ro.cm.based.variant=GPROJ \
 	ro.media.enc.jpeg.quality=100 \
 	ro.media.dec.jpeg.memcap=8000000 \
