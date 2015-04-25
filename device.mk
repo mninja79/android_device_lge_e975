@@ -97,6 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnGsmDevice=1
 
 PRODUCT_PACKAGES += \
+	hostapd_default.conf \
 	wpa_supplicant_overlay.conf \
 	p2p_supplicant_overlay.conf
 
