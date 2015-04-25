@@ -33,6 +33,8 @@ BLUETOOTH_SLEEP_PATH=/proc/bluetooth/sleep/proto
 LOG_TAG="qcom-bluetooth"
 LOG_NAME="${0}:"
 
+hciattach_pid=""
+
 loge ()
 {
   /system/bin/log -t $LOG_TAG -p e "$LOG_NAME $@"
@@ -202,11 +204,6 @@ LE_POWER_CLASS=`getprop qcom.bt.le_dev_pwr_class`
 TRANSPORT=`getprop ro.qualcomm.bt.hci_transport`
 logi "Transport : $TRANSPORT"
 
-#load bd addr
-BDADDR=`/system/bin/bdAddrLoader -p`
-
-logi "BDADDR: $BDADDR"
-
 case $POWER_CLASS in
   1) PWR_CLASS="-p 0" ;
      logi "Power Class: 1";;
@@ -218,13 +215,6 @@ case $POWER_CLASS in
      logi "Power Class: Ignored. Default(1) used (1-CLASS1/2-CLASS2/3-CUSTOM)";
      logi "Power Class: To override, Before turning BT ON; setprop qcom.bt.dev_power_class <1 or 2 or 3>";;
 esac
-
-if ["$BDADDR" == ""]
-then
-  logwrapper /system/bin/hci_qcomm_init -e $PWR_CLASS -vv
-else
-  logwrapper /system/bin/hci_qcomm_init -b $BDADDR -e $PWR_CLASS -vv
-fi
 
 case $LE_POWER_CLASS in
   1) LE_PWR_CLASS="-P 0" ;
