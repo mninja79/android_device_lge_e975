@@ -98,7 +98,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
 	hostapd_default.conf \
 	wpa_supplicant_overlay.conf \
-	wpa_supplicant.conf \
 	p2p_supplicant.conf \
 	p2p_supplicant_overlay.conf \
 	FTM_PowerTable.XML
