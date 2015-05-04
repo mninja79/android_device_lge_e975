@@ -23,6 +23,11 @@ $(call inherit-product, device/lge/gproj-common/gproj.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.ota.romname=temasek-e975 \
+    ro.ota.version=$(shell date +%F | sed s@-@@g) \
+    ro.ota.manifest=http://temasek.rajasthanautoworks.in/ota/hlte.xml
+
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
 # we do this little trick to fall back to the hdpi version
