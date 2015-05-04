@@ -16,6 +16,9 @@ PRODUCT_BRAND := lge
 PRODUCT_MODEL := Optimus G
 PRODUCT_MANUFACTURER := LGE
 
+# Custom unofficial build tag
+TARGET_UNOFFICIAL_BUILD_ID := temasek
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_NAME=geehrc_open_eu \
 	BUILD_FINGERPRINT=lge/geehrc_open_eu/geehrc:4.1.2/JZO54K/E97510b.1360741472:user/release-keys \
