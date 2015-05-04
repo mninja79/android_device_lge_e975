@@ -111,6 +111,11 @@
 
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">10</integer>
+<<<<<<< HEAD
+=======
+    
+    <!-- Doze: force using accelerometer as pick up sensor -->
+    <bool name="config_dozeUseAccelerometer">true</bool>
     
         <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
@@ -159,4 +164,5 @@
 
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
+>>>>>>> 73573ee... mms and network fixes
 </resources>
