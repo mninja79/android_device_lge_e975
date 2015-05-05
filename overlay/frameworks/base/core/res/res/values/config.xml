@@ -101,7 +101,6 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">71</integer>
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
     <integer name="config_longPressOnHomeBehavior">2</integer>
     
     <!-- Ambient Display : Dream of Notifications -->
@@ -111,6 +110,9 @@
 
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">10</integer>
+    
+    <!-- Doze: force using accelerometer as pick up sensor -->
+    <bool name="config_dozeUseAccelerometer">true</bool>
     
         <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
