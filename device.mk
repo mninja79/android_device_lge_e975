@@ -124,5 +124,6 @@ ADDITIONAL_DEFAULT_PROPERTIES := \
 	ro.adb.secure=0 \
 	ro.secure=0 \
 	persist.service.adb.enable=1
+	debug.qualcomm.sns.hal=0
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
