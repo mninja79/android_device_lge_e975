@@ -118,12 +118,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.cm.based.variant=GPROJ \
 	ro.media.enc.jpeg.quality=100 \
 	ro.media.dec.jpeg.memcap=8000000 \
-	ro.media.enc.hprof.vid.bps=8000000
+	ro.media.enc.hprof.vid.bps=8000000 \
+	debug.qualcomm.sns.hal=0
 
 ADDITIONAL_DEFAULT_PROPERTIES := \
 	ro.adb.secure=0 \
 	ro.secure=0 \
 	persist.service.adb.enable=1
-	debug.qualcomm.sns.hal=0
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
