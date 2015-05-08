@@ -124,7 +124,7 @@
     
     <!-- Doze: force using accelerometer as pick up sensor -->
     <add-resource type="bool" name="config_dozeUseAccelerometer">
-    <bool name="config_dozeUseAccelerometer">true</bool>
+        <bool name="config_dozeUseAccelerometer">true</bool>
     </add-resource>
     
         <!-- Indicate whether to allow the device to suspend when the screen is off
