@@ -109,9 +109,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio_policy.conf:system/vendor/etc/audio_policy.conf
 
 PRODUCT_PACKAGES += \
-	FMRadio 
-#	qcom.fmradio \
-#	libqcomfm_jni
+	FMRadio \
+	qcom.fmradio \
+	libqcomfm_jni
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nproj.display.version=0.1 \
