@@ -3,17 +3,17 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 768
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
+#$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Inherit some common slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e975/e975.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e975
-PRODUCT_NAME := slim_e975
+PRODUCT_NAME := liquid_e975
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := Optimus G
 PRODUCT_MANUFACTURER := LGE
