@@ -108,8 +108,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init.gee.fm.sh:system/etc/init.gee.fm.sh \
 	$(LOCAL_PATH)/audio_policy.conf:system/vendor/etc/audio_policy.conf
 
-#PRODUCT_PACKAGES += \
-#	FM2 \
+PRODUCT_PACKAGES += \
+	FMRadio 
 #	qcom.fmradio \
 #	libqcomfm_jni
 
